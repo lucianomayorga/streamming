@@ -1,7 +1,4 @@
-.navbar {
-    position: sticky; top: 0;
-    backdrop-filter: blur(45px);
-}
+
 .footer {
   display: flex;
   flex-direction: column;
