@@ -1,0 +1,39 @@
+body {
+  background-color: #121212;
+  color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #e9ecef;
+}
+
+.tagline {
+  font-style: italic;
+  color: #adb5bd;
+  font-size: 1.2rem;
+}
+
+.poster-img {
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 400px;
+}
+
+.info-box {
+  background-color: #1e1e1e;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+
+.trailer-section iframe {
+  border-radius: 12px;
+}
+.text-center{
+    color:whitesmoke;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
