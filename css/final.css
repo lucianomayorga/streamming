@@ -1,6 +1,6 @@
 body {
-  background-color: #121212;
-  color: #f8f9fa;
+  background-color:  #000000;
+  color:  #f8f9fa;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -21,6 +21,11 @@ body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
   width: 100%;
   max-width: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.poster-img:hover{
+     transform: scale(1.05); 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4)
 }
 
 .info-box {
@@ -34,6 +39,6 @@ body {
   border-radius: 12px;
 }
 .text-center{
-    color:whitesmoke;
+    color: #1e1e1e;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
