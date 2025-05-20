@@ -227,6 +227,9 @@ li {
 }
 
 /* FOOTER */
+footer {
+    text-align: center;
+}
 .footer {
   display: flex;
   flex-direction: column;
