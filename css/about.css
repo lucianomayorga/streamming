@@ -1,0 +1,158 @@
+/* ROOT  */
+:root {
+--color-negro: #121212;
+--color-blanco:#FFFFFF;
+--color-naranja:#FF6B00;
+--color-gris:#2a2a2a;
+--color-gris-transparent: #2a2a2a8a;
+--color-amarillo:#F0B429;
+--color-azul:#005B73;
+--color-aqua: #00ffff;
+--color-aqua-oscuroytransp: #047272;
+--fuente-principal: 'Roboto', sans-serif;
+--espaciado: 16px;
+}
+
+body{
+    background: linear-gradient(#000000cb, #000000cb),
+url(https://i.redd.it/4fxxbm4opjd31.jpg) center / cover no-repeat fixed;
+    font-family: var(--fuente-principal);
+    color: var(--color-blanco);
+    width: auto;
+    text-align: center;
+}
+
+/* HEADER  */
+
+
+/* MAIN  */
+section{
+    margin: auto;
+}
+
+footer{
+    color: var(--color-aqua);
+}
+
+h1{
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    
+    color: var(--color-aqua);
+    border-bottom: 1px solid var(--color-aqua);
+}
+
+/* FONDO */
+
+
+/* CARDS */
+
+.containerCards  {
+    border: 8px solid var(--color-aqua);
+    border-radius: 30px;
+    margin: 30px;
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.custom-card {
+    position: relative;
+    background-color: #2a2a2a8a;
+    border-radius: 50px;
+    height: 520px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+}
+.card-img-top {
+    border-radius: 50px;
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-title {
+    color: var(--color-blanco);
+    font-size: 30px;
+}
+.card-text {
+    color: var(--color-blanco);
+}
+.btn-primary {
+    background-color: transparent !important;
+    border-color:1px solid var(--color-aqua-oscuroytransp) !important;
+    color: var(--color-blanco) !important;
+    margin: 10px;
+}
+.botonAtras{
+    position: relative;
+    z-index: 1; 
+    background-color: var(--color-gris-transparent);
+    border: 1px solid var(--color-aqua);
+    border-radius: 15px;
+    padding: 20px;
+    color: var(--color-blanco);
+    font-size: 18px;
+    width: 150px;
+    margin-left: 45%;
+    margin-top: 20px;
+}
+.regresar {
+    text-decoration: none;
+    color: var(--color-blanco);
+}
+
+
+
+/* ANIMACIONES Y HOOVERS */
+.custom-card {
+    position: relative; 
+    z-index: 1; 
+}
+
+.custom-card:hover {
+    transform: translateY(-15px);
+}
+
+.custom-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 4px solid transparent; 
+    border-radius: 50px;
+    z-index: -1; 
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.custom-card:hover::before {
+    transform: scaleX(1);
+    border-color: #00ffff; 
+}
+
+.btn-primary:hover {
+    background-color: var(--color-aqua-oscuroytransp) !important;
+    border-color: var(--color-aqua) !important;
+}
+
+.btn-primary:active,
+.btn-primary:focus-visible {
+    background-color: var(--color-aqua) !important;
+    border-color: var(--color-aqua) !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+.botonAtras:hover {
+    background-color: var(--color-aqua-oscuroytransp);
+    transform: translateY(-13px);
+    transition: transform 0.3s ease;
+}
