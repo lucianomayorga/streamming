@@ -77,16 +77,52 @@ footer {
     align-items: start;
   }
 }
-.father{
-  display: flex;
-  justify-content: space-around;  
-  align-items: start;
-    background: linear-gradient(to right, #2e2e2e, #000);
+/* CONTENEDOR DE PELICULAS */
+.contenedor-padre h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000d0; /* Igual que el contenedor */
+    margin: 0;
+}
+.peliculas-contenedor {
+    background-color: #000000d0;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.pelicula-card {
+    margin: 30px;
+    display: block;
+    width: 250px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.pelicula-card img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.pelicula-card:hover {
+    transform: scale(1.10);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.699);
+}
+
+/* .father{
+  background: linear-gradient(to right, #2e2e2e, #000);
   color: #f0f0f0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  border-radius: 8px;
-  padding: 2rem;
-
+  padding: 1rem;
 }
 .img-hover{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -96,7 +132,7 @@ footer {
 .img-hover:hover{
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
+} */
 @media (min-width: 1024px) {
     .footer-form {
     display: flex;
