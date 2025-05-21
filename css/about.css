@@ -1,0 +1,216 @@
+/* ROOT  */
+:root {
+--color-negro: #121212;
+--color-blanco:#FFFFFF;
+--color-gris:#2a2a2a;
+--color-gris-transparent: #2a2a2a8a;
+--color-amarillo:#ffc107;
+--color-amarilloOS-trans: #f7c121b7;
+--fuente-principal: 'Roboto', sans-serif;
+}
+
+body{
+    background: linear-gradient(#000000cb, #000000cb),
+url(https://i.redd.it/4fxxbm4opjd31.jpg) center / cover no-repeat fixed;
+    font-family: var(--fuente-principal);
+    color: var(--color-blanco);
+    width: auto;
+    text-align: center;
+}
+
+/* HEADER  */
+.navbar{
+    background-color: var(--color-gris-transparent);
+}
+.btn-log-sus {
+    margin-left: 20px;
+}
+
+/* MAIN  */
+section{
+    margin: auto;
+    margin-top: 5%;
+}
+
+
+h1{
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    
+    color: var(--color-amarillo);
+    border-bottom: 1px solid var(--color-amarillo);
+}
+.team-des{
+    font-size: 20px;
+    width:auto;
+    margin: 2%;
+}
+
+/* FONDO */
+
+
+/* CARDS */
+
+.containerCards  {
+    border: 8px solid var(--color-amarillo);
+    border-radius: 30px;
+    margin: 30px;
+    padding: 20px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.custom-card {
+    position: relative;
+    background-color: #2a2a2a8a;
+    border-radius: 50px;
+    height: 450px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    overflow: hidden;
+}
+.card-img-top {
+    border-radius: 50px;
+    padding: 10px;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-title {
+    color: var(--color-blanco);
+    font-size: 30px;
+}
+.b-card {
+    margin: 10px;
+}
+
+.regresar {
+    text-decoration: none;
+    color: var(--color-amarillo);
+    padding: 10px;
+}
+
+
+
+/* ANIMACIONES Y HOOVERS */
+.custom-card {
+    position: relative; 
+    z-index: 1; 
+}
+
+.custom-card:hover {
+    transform: translateY(-15px);
+}
+
+.custom-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 4px solid transparent; 
+    border-radius: 50px;
+    z-index: -1; 
+    transform: scaleX(0);
+    transform-origin: top;
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.custom-card:hover::before {
+    transform: scaleX(1);
+    border-color: var(--color-amarillo); 
+}
+
+.regresar:hover{
+    text-decoration: none;
+    color: var(--color-negro);
+}
+
+/* FOOTER */
+.enlacesUL{
+    font-size: 16px;
+}
+footer {
+  text-align: center;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 40px;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+
+.footer-col {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logoFooter .imgLogoFooter {
+    width: 120px;
+    border-radius: 20px;
+}
+.footer-col h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--color-amarillo); /* Color para los títulos */
+}
+
+.footer-col p,
+.footer-col ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-col ul {
+    list-style-type: none;
+}
+
+.footer-col ul li {
+    margin: 5px 0;
+}
+
+.footer-col ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #dc3545; /* Color en el hover de los enlaces */
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+}
+
+
+/* MEDIA QUERIES  */
+@media (min-width: 768px) {
+.botonAtras{
+    margin-left: 44%;
+}
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+@media (min-width: 1024px) {
+.botonAtras{
+    margin-left: 45.2%;
+}
+
+}
