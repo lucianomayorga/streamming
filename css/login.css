@@ -94,12 +94,19 @@ body {
 .submit {
   background-color: #e50914;
   padding: 15px;
-  border: 0;
+  border: none;
   font-size: 18px;
   text-transform: uppercase;
   border-radius: 15px;
   cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
 }
+.inputs a.submit {
+  color: black;
+}
+
 .checkbox-container {
   display: flex;
   flex-direction: row;
