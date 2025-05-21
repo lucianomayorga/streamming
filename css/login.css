@@ -242,3 +242,13 @@ footer {
     align-items: start;
   }
 }
+@media (min-width: 1024px) {
+    .footer-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 !important;
+    padding: 0;
+  }
+}
