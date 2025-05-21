@@ -21,61 +21,76 @@
     <link rel="stylesheet" href="/css/login.css" />
   </head>
   <body>
-    <nav
-      class="navbar bg-dark border-bottom border-body navbar-expand-lg sticky-lg-top"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <img
-          src="https://img.icons8.com/?size=100&id=yPOgUFWHVx7X&format=png&color=000000"
-          alt="logo"
-          width="50px"
-        />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Menú izquierdo -->
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Películas</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Series</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Categorías
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Acción</a></li>
-                <li><a class="dropdown-item" href="#">Aventura</a></li>
-                <li><a class="dropdown-item" href="#">Terror</a></li>
-                <li><a class="dropdown-item" href="#">Comedia</a></li>
-                <li><a class="dropdown-item" href="#">Documentales</a></li>
+    <header>
+      <nav
+        class="navbar border-body navbar-expand-lg fixed-top"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <img
+            src="https://img.icons8.com/?size=100&id=yPOgUFWHVx7X&format=png&color=000000"
+            alt="logo"
+            width="50px"
+          />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Peliculas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Series</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu px-2">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Acción</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Aventura</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Terror</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Comedia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Documentales</a>
+                  </li>
+                </ul>
+              </li>
+              <ul class="gap-3 d-flex mt-1 list-unstyled btn-log-sus">
+                <li>
+                  <a class="bg-dark" href="/suscribirse.html">
+                    <button type="button" class="btn btn-outline-danger">
+                      Suscribirse
+                    </button>
+                  </a>
+                </li>
               </ul>
-            </li>
-          </ul>
-
-          <!-- Botones y búsqueda -->
-          <div class="d-flex align-items-center gap-3">
+            </ul>
             <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
@@ -83,15 +98,14 @@
                 placeholder="..."
                 aria-label="Search"
               />
-              <button class="btn btn-outline-danger" type="submit">
+              <button class="btn btn-outline-warning" type="submit">
                 Buscar
               </button>
             </form>
           </div>
         </div>
-      </div>
-    </nav>
-
+      </nav>
+    </header>
     <main class="main-content">
       <div class="container">
         <form class="form">
@@ -123,7 +137,7 @@
 
             <p>
               ¿Aún no tienes cuenta?
-              <a href="#">Regístrate aquí.</a>
+              <a href="suscribirse.html">Regístrate aquí.</a>
             </p>
           </div>
         </form>
@@ -154,28 +168,28 @@
           <h4>Redes sociales</h4>
           <ul class="d-flex gap-4">
             <li>
-              <img
-                src="https://img.icons8.com/?size=100&id=GrD61GXZyy1T&format=png&color=000000"
-                alt="imagen"
-                width="35px"
-              />
-              <a href="#."></a>
+              <a href="#."
+                ><img
+                  src="https://img.icons8.com/?size=100&id=GrD61GXZyy1T&format=png&color=000000"
+                  alt="imagen"
+                  width="35px"
+              /></a>
             </li>
             <li>
-              <img
-                src="https://img.icons8.com/?size=100&id=nj0Uj45LGUYh&format=png&color=000000"
-                alt="imagen"
-                width="35px"
-              />
-              <a href="#."></a>
+              <a href="#."
+                ><img
+                  src="https://img.icons8.com/?size=100&id=nj0Uj45LGUYh&format=png&color=000000"
+                  alt="imagen"
+                  width="35px"
+              /></a>
             </li>
             <li>
-              <img
-                src="https://img.icons8.com/?size=100&id=KxHlias9AgZt&format=png&color=000000"
-                alt="imagen"
-                width="35px"
-              />
-              <a href="#."></a>
+              <a href="#."
+                ><img
+                  src="https://img.icons8.com/?size=100&id=KxHlias9AgZt&format=png&color=000000"
+                  alt="imagen"
+                  width="35px"
+              /></a>
             </li>
           </ul>
         </div>
