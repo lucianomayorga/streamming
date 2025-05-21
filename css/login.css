@@ -4,19 +4,31 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-html body {
+html,
+body {
+  height: 100%;
   margin: 0;
   height: 100%;
 }
+
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100vh;
   background-image: url(/img/Watch-Free-2048x1152-1.webp);
-  color: white;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-attachment: fixed;
+
+  color: white;
+}
+nav {
+  margin-bottom: 30px;
+}
+
+.main-content {
+  flex: 1;
 }
 
 .container {
@@ -25,7 +37,6 @@ body {
   align-items: center;
   width: 1000px;
   height: 700px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .info {
@@ -89,6 +100,17 @@ body {
   font-size: 15px;
   margin-bottom: 35px;
   text-align: center;
+}
+
+/* oculta los label */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .submit {
