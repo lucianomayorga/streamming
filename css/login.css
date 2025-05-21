@@ -25,7 +25,7 @@ body {
 }
 /* HEADER  */
 .navbar{
-    background-color: var(--color-gris-transparent);
+    background-color: #2a2a2a8a;
 }
 .btn-log-sus {
     margin-left: 20px;

@@ -22,99 +22,101 @@
     <title>Nx Moovie</title>
   </head>
   <body>
-    <nav
-      class="navbar bg-dark border-bottom border-body navbar-expand-lg sticky-lg-top"
-      data-bs-theme="dark"
-    >
-      <div class="container-fluid">
-        <img
-          src="https://img.icons8.com/?size=100&id=yPOgUFWHVx7X&format=png&color=000000"
-          alt="logo"
-          width="50px"
-        />
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Peliculas</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Series</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Categorias
-              </a>
-              <ul class="dropdown-menu px-2">
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Accion</a>
+    <header>
+      <nav
+        class="navbar  border-body navbar-expand-lg fixed-top"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a href="/index.html">
+          <img
+            src="/img/icons8-n-desktop-app-100.png"
+            alt="logo"
+            width="50px"
+          />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html"
+                  >Peliculas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/index.html">Series</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu px-2">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Acción</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Aventura</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Terror</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Comedia</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Documentales</a>
+                  </li>
+                </ul>
+              </li>
+              <ul class="gap-3 d-flex mt-1 list-unstyled btn-log-sus">
+                <li>
+                  <a class="" href="/login.html">
+                    <button
+                      type="button"
+                      class="btn btn-outline-warning"
+                    >
+                      Iniciar sesión
+                    </button>
+                  </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Aventura</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Terror</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Comedia</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Documentales</a>
+                <li>
+                  <a class="" href="/suscribirse.html">
+                    <button type="button" class="btn btn-outline-danger">
+                      Suscribirse
+                    </button>
+                  </a>
                 </li>
               </ul>
-            </li>
-            <ol class="gap-3 d-flex mt-1">
-              <li>
-                <a class="dropdown-item bg-dark" href="#"
-                  ><button
-                    type="button"
-                    class="btn btn-outline-primary"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    Iniciar sesion
-                  </button></a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item bg-dark" href="#"
-                  ><button type="button" class="btn btn-outline-primary">
-                    Suscribirse
-                  </button></a
-                >
-              </li>
-            </ol>
-          </ul>
-          <form class="d-flex" role="search">
+            </ul>
+            <form class="d-flex" role="search">
             <input
               class="form-control me-2"
               type="search"
               placeholder="..."
               aria-label="Search"
             />
-            <button class="btn btn-outline-danger" type="submit">Buscar</button>
+            <button class="btn btn-outline-warning" type="submit">Buscar</button>
           </form>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <!-- caruosel -->
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
@@ -257,11 +259,11 @@
       </button>
     </div>
     <footer>
-      <footer class="footer" id="contacto">
+      <div class="footer" id="contacto">
         <div class="footer-col">
           <div class="logoFooter">
             <img
-              src="https://img.icons8.com/?size=100&id=yPOgUFWHVx7X&format=png&color=000000"
+              src="/img/icons8-n-desktop-app-100.png"
               alt="imagen logo"
               class="imgLogoFooter"
             />
@@ -269,124 +271,45 @@
         </div>
         <div class="footer-col">
           <h4>Enlaces</h4>
-          <ul>
-            <li><a href="#" target="_blank">Inicio</a></li>
-            <li><a href="#." target="_blank">Sobre nosotros</a></li>
-            <li><a href="./contacto.html" target="_blank">Contacto</a></li>
+          <ul class="enlacesUL">
+            <li><a href="/index.html" target="_self">Inicio</a></li>
+            <li><a href="/sobreNosotros.html" target="_self">Sobre nosotros</a></li>
+            <li><a href="./contacto.html" target="_self">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h4>Redes sociales</h4>
           <ul class="d-flex gap-4">
             <li>
-              <img
+              <a href="#."><img
                 src="https://img.icons8.com/?size=100&id=GrD61GXZyy1T&format=png&color=000000"
                 alt="imagen"
                 width="35px"
-              />
-              <a href="#."></a>
+              /></a>
             </li>
             <li>
-              <img
+              <a href="#."><img
                 src="https://img.icons8.com/?size=100&id=nj0Uj45LGUYh&format=png&color=000000"
                 alt="imagen"
                 width="35px"
-              />
-              <a href="#."></a>
+              /></a>
             </li>
             <li>
-              <img
+              <a href="#."><img
                 src="https://img.icons8.com/?size=100&id=KxHlias9AgZt&format=png&color=000000"
                 alt="imagen"
                 width="35px"
-              />
-              <a href="#."></a>
+              /></a>
             </li>
           </ul>
         </div>
-      </footer>
+      </div>
       <div
         class="footer-col bg-dark d-flex justify-content-center text-secondary"
       >
         <p>© 1996-2025, Nx M, Inc. o sus filiales</p>
       </div>
     </footer>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Inicio de sesion
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row">
-              <div class="col">
-                <form class="was-validated">
-                  <div class="mb-3">
-                    <label for="validationTextarea" class="form-label"
-                      >Nombre de usuario</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="validationTextarea"
-                      placeholder="Campo requerido"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Por favor ingrese su nombre de usuario.
-                    </div>
-                  </div>
-                </form>
-                <form class="was-validated">
-                  <div class="mb-3">
-                    <label for="validationTextarea" class="form-label"
-                      >Contraseña</label
-                    >
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="validationTextarea"
-                      placeholder="Campo requerido"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Por favor ingrese su contraseña.
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Cerrar
-            </button>
-            <button type="button" class="btn btn-primary">Iniciar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
