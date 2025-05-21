@@ -117,22 +117,56 @@ footer {
     transform: scale(1.10);
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.699);
 }
-
-/* .father{
-  background: linear-gradient(to right, #2e2e2e, #000);
-  color: #f0f0f0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  padding: 1rem;
+.banner-suscripcion {
+  background-color: #a53012;
+  color: white;
+  text-align: center;
+  padding: 20px 15px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
 }
-.img-hover{
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border-radius: 10px;
 
+.banner-suscripcion p {
+  font-size: 1.5rem;
+  margin: 0;
 }
-.img-hover:hover{
+
+.btn-suscribirse {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #ffc107;
+  color: #000000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-suscribirse:hover {
+  background-color: #e0aa00;
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-} */
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 480px) {
+  .banner-suscripcion p {
+    font-size: 1.2rem;
+  }
+
+  .btn-suscribirse {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+}
+
+
 @media (min-width: 1024px) {
     .footer-form {
     display: flex;

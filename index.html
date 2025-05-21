@@ -1,325 +1,262 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="author"
-      content="felipe marrone, luciano mayorga, nicolas kreisel, facundo mamani, paula rodriguez"
-    />
-    <meta name="keyboards" content="Nx Moovie, pelicula, series,documentales" />
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css"
-    />
-    <title>Nx Moovie</title>
-  </head>
-  <body>
-    <header>
-      <nav
-        class="navbar  border-body navbar-expand-lg fixed-top"
-        data-bs-theme="dark"
-      >
-        <div class="container-fluid">
-          <a href="/index.html">
-          <img
-            src="/img/icons8-n-desktop-app-100.png"
-            alt="logo"
-            width="50px"
-          />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/index.html"
-                  >Peliculas</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="/index.html">Series</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Categorias
-                </a>
-                <ul class="dropdown-menu px-2">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Acción</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Aventura</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Terror</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Comedia</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="#">Documentales</a>
-                  </li>
-                </ul>
-              </li>
-              <ul class="gap-3 d-flex mt-1 list-unstyled btn-log-sus">
-                <li>
-                  <a class="" href="/login.html">
-                    <button
-                      type="button"
-                      class="btn btn-outline-warning"
-                    >
-                      Iniciar sesión
-                    </button>
-                  </a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="felipe marrone, luciano mayorga, nicolas kreisel, facundo mamani, paula rodriguez" />
+  <meta name="keyboards" content="Nx Moovie, pelicula, series,documentales" />
+  <link rel="icon" type="image/png" href="/img/icons8-favicon-desktop-app-pulsar-color-32.png">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.12.1/font/bootstrap-icons.min.css" />
+  <title>Nx Moovie</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar  border-body navbar-expand-lg fixed-top" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a href="/index.html">
+          <img src="/img/icons8-n-desktop-app-100.png" alt="logo" width="50px" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Peliculas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html">Series</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu px-2">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Acción</a>
                 </li>
-                <li>
-                  <a class="" href="/suscribirse.html">
-                    <button type="button" class="btn btn-outline-danger">
-                      Suscribirse
-                    </button>
-                  </a>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Aventura</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Terror</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Comedia</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Documentales</a>
                 </li>
               </ul>
+            </li>
+            <ul class="gap-3 d-flex mt-1 list-unstyled btn-log-sus">
+              <li>
+                <a class="" href="/login.html">
+                  <button type="button" class="btn btn-outline-warning">
+                    Iniciar sesión
+                  </button>
+                </a>
+              </li>
+              <li>
+                <a class="" href="/suscribirse.html">
+                  <button type="button" class="btn btn-outline-danger">
+                    Suscribirse
+                  </button>
+                </a>
+              </li>
             </ul>
-            <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="..."
-              aria-label="Search"
-            />
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="..." aria-label="Search" />
             <button class="btn btn-outline-warning" type="submit">Buscar</button>
           </form>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <!-- caruosel -->
-    <div id="carouselExampleCaptions" class="carousel slide">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/312BE729F77C3068C5169B83DF92A32E1991EA11EE0B6345DAAAFF1B5D915EC5/compose?format=webp&width=1600"
-            class="d-block w-100"
-            alt="porta"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>
-              Series exclusivas, éxitos del cine, el deporte de ESPN y más
-            </h5>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/E14C14BE7EDB72188440769DB791C28340D1F1A3AC10555AFB22F6B942E05301/compose?format=webp&width=1600"
-            class="d-block w-100"
-            alt="portada"
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Solo en Nx Moovie</h5>
-          </div>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleCaptions"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+    </nav>
+  </header>
+  <!-- caruosel -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
     </div>
-    <!-- card -->
-    <section class="">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/312BE729F77C3068C5169B83DF92A32E1991EA11EE0B6345DAAAFF1B5D915EC5/compose?format=webp&width=1600"
+          class="d-none d-md-block w-100" alt="porta" />
+
+        <img
+          src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/84641901EB2538D3167156E628E32ED6C2CBD97FCE7C5F06E487DDD22DB00667/compose?format=webp&width=1152"
+          alt="" class="d-md-none w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>
+            Series exclusivas, éxitos del cine, el deporte de ESPN y más
+          </h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img
+          src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/E14C14BE7EDB72188440769DB791C28340D1F1A3AC10555AFB22F6B942E05301/compose?format=webp&width=1600"
+          class="d-none d-md-block w-100" alt="portada" />
+        <img
+          src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/7F8425DB716F128E4B1E7107D3185A72FA653F3C250E93714CEAA623E2DF8044/compose?format=webp&width=1152"
+          alt="" class="d-md-none w-100">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Solo en Nx Moovie</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="banner-suscripcion">
+  <p>¡Disfrutá de películas y series sin límites!</p>
+  <a href="/suscribirse.html" class="btn-suscribirse">Suscribite ahora</a>
+</div>
+  <!-- card -->
+  <section class="">
     <div class="contenedor-padre">
       <h1>Peliculas y series populares</h1>
       <div class="peliculas-contenedor">
-            <a href="/final.html" class="pelicula-card">
-                <img src="https://image.tmdb.org/t/p/original/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg" alt="Póster Película 1">
-            </a>
-            <a href="/lastofpeli.html" class="pelicula-card">
-                <img src="https://image.tmdb.org/t/p/original/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg" alt="Póster Película 2">
-            </a>
-            <a href="/superman.html" class="pelicula-card">
-                <img src="https://image.tmdb.org/t/p/original/9dRUAOU1HyxnyLmCcMMD9FMzGj.jpg" alt="Póster Película 2">
-            </a>
-            <a href="/error404.html" class="pelicula-card">
-                <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/vGXptEdgZIhPg3cGlc7e8sNPC2e.jpg" alt="Póster Película 2">
-            </a>
-            <a href="/error404.html" class="pelicula-card">
-                <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="Póster Película 2">
-            </a>
-            <a href="/error404.html" class="pelicula-card">
-                <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/edKpE9B5qN3e559OuMCLZdW1iBZ.jpg" alt="Póster Película 2">
-            </a>
-            <a href="/error404.html" class="pelicula-card">
-                <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg" alt="Póster Película 2">
-            </a>
-            <a href="/error404.html" class="pelicula-card">
-                <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg" alt="Póster Película 2">
-            </a>
-            <a href="/error404.html" class="pelicula-card">
-                <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/dg9e5fPRRId8PoBE0F6jl5y85Eu.jpg" alt="Póster Película 2">
-            </a>
-            <a href="/error404.html" class="pelicula-card">
-                <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/3Cz7ySOQJmqiuTdrc6CY0r65yDI.jpg" alt="Póster Película 2">
-            </a>
+        <a href="/final.html" class="pelicula-card">
+          <img src="https://image.tmdb.org/t/p/original/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg" alt="Póster Película 1">
+        </a>
+        <a href="/lastofpeli.html" class="pelicula-card">
+          <img src="https://image.tmdb.org/t/p/original/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg" alt="Póster Película 2">
+        </a>
+        <a href="/superman.html" class="pelicula-card">
+          <img src="https://image.tmdb.org/t/p/original/9dRUAOU1HyxnyLmCcMMD9FMzGj.jpg" alt="Póster Película 2">
+        </a>
+        <a href="/error404.html" class="pelicula-card">
+          <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/vGXptEdgZIhPg3cGlc7e8sNPC2e.jpg"
+            alt="Póster Película 2">
+        </a>
+        <a href="/error404.html" class="pelicula-card">
+          <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg"
+            alt="Póster Película 2">
+        </a>
+        <a href="/error404.html" class="pelicula-card">
+          <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/edKpE9B5qN3e559OuMCLZdW1iBZ.jpg"
+            alt="Póster Película 2">
+        </a>
+        <a href="/error404.html" class="pelicula-card">
+          <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/dmo6TYuuJgaYinXBPjrgG9mB5od.jpg"
+            alt="Póster Película 2">
+        </a>
+        <a href="/error404.html" class="pelicula-card">
+          <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/1XS1oqL89opfnbLl8WnZY1O1uJx.jpg"
+            alt="Póster Película 2">
+        </a>
+        <a href="/error404.html" class="pelicula-card">
+          <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/dg9e5fPRRId8PoBE0F6jl5y85Eu.jpg"
+            alt="Póster Película 2">
+        </a>
+        <a href="/error404.html" class="pelicula-card">
+          <img src="https://media.themoviedb.org/t/p/w220_and_h330_face/3Cz7ySOQJmqiuTdrc6CY0r65yDI.jpg"
+            alt="Póster Película 2">
+        </a>
 
-        </div>
       </div>
-    </section>
-    <div
-      id="carouselExampleControlsNoTouching"
-      class="carousel slide"
-      data-bs-touch="false"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/B956F6E366E76AEE660C06D5011037B76EADCF4FB31E7B93592AF4BA7B3FB1E1/compose?format=webp&width=1600"
-            class="d-block w-100"
-            alt="imagen banner"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/848278492945AD789CDDE6137B1E278970FAF4E6E79CE5A21685086ACCBABB04/compose?format=webp&width=1600"
-            class="d-block w-100"
-            alt="magen banner"
-          />
-        </div>
-        <div class="carousel-item">
-          <img
-            src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/491156FE6E246144AAE71EB32D4F653A65DDC35D90DE27DB710EE57B2B02F226/compose?format=webp&width=1600"
-            class="d-block w-100"
-            alt="magen banner"
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleControlsNoTouching"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleControlsNoTouching"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    <footer>
-      <div class="footer" id="contacto">
-        <div class="footer-col">
-          <div class="logoFooter">
-            <img
-              src="/img/icons8-n-desktop-app-100.png"
-              alt="imagen logo"
-              class="imgLogoFooter"
-            />
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Enlaces</h4>
-          <ul class="enlacesUL">
-            <li><a href="/index.html" target="_self">Inicio</a></li>
-            <li><a href="/sobreNosotros.html" target="_self">Sobre nosotros</a></li>
-            <li><a href="./contacto.html" target="_self">Contacto</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Redes sociales</h4>
-          <ul class="d-flex gap-4">
-            <li>
-              <a href="#."><img
-                src="https://img.icons8.com/?size=100&id=GrD61GXZyy1T&format=png&color=000000"
-                alt="imagen"
-                width="35px"
-              /></a>
-            </li>
-            <li>
-              <a href="#."><img
-                src="https://img.icons8.com/?size=100&id=nj0Uj45LGUYh&format=png&color=000000"
-                alt="imagen"
-                width="35px"
-              /></a>
-            </li>
-            <li>
-              <a href="#."><img
-                src="https://img.icons8.com/?size=100&id=KxHlias9AgZt&format=png&color=000000"
-                alt="imagen"
-                width="35px"
-              /></a>
-            </li>
-          </ul>
+  </section>
+  <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://image.tmdb.org/t/p/original/evjLWu39VfktjeO7y5g74HU6vMq.jpg"
+          class="d-none d-md-block w-100 " alt="imagen banner" />
+          <img src="https://image.tmdb.org/t/p/original/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg" alt="" class="d-md-none w-100 img-fluid">
+      </div>
+
+
+      <div class="carousel-item active">
+        <img
+          src="https://image.tmdb.org/t/p/original/GBr1ozQf7WZqSMwNPdb5Xs2eyn.jpg"
+          class="d-none d-md-block w-100 " alt="imagen banner" />
+          <img src="https://image.tmdb.org/t/p/original/xkd2yNgaZ7b2Xxh5lxBcL8VnNX2.jpg" alt="" class="d-md-none w-100 img-fluid">
+      </div>
+
+
+
+      <div class="carousel-item active">
+        <img
+          src="https://image.tmdb.org/t/p/original/74eUkF72aQonomvpAe1JEqukZUI.jpg"
+          class="d-none d-md-block w-100 " alt="imagen banner" />
+          <img src="https://image.tmdb.org/t/p/original/6WxhEvFsauuACfv8HyoVX6mZKFj.jpg" alt="" class="d-md-none w-100 img-fluid">
+      </div>
+
+
+
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
+  <footer>
+    <div class="footer" id="contacto">
+      <div class="footer-col">
+        <div class="logoFooter">
+          <img src="/img/icons8-n-desktop-app-100.png" alt="imagen logo" class="imgLogoFooter" />
         </div>
       </div>
-      <div
-        class="footer-col bg-dark d-flex justify-content-center text-secondary"
-      >
-        <p>© 1996-2025, Nx M, Inc. o sus filiales</p>
+      <div class="footer-col">
+        <h4>Enlaces</h4>
+        <ul class="enlacesUL">
+          <li><a href="/index.html" target="_self">Inicio</a></li>
+          <li><a href="/sobreNosotros.html" target="_self">Sobre nosotros</a></li>
+          <li><a href="./contacto.html" target="_self">Contacto</a></li>
+        </ul>
       </div>
-    </footer>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+      <div class="footer-col">
+        <h4>Redes sociales</h4>
+        <ul class="d-flex gap-4">
+          <li>
+            <a href="#."><img src="https://img.icons8.com/?size=100&id=GrD61GXZyy1T&format=png&color=000000"
+                alt="imagen" width="35px" /></a>
+          </li>
+          <li>
+            <a href="#."><img src="https://img.icons8.com/?size=100&id=nj0Uj45LGUYh&format=png&color=000000"
+                alt="imagen" width="35px" /></a>
+          </li>
+          <li>
+            <a href="#."><img src="https://img.icons8.com/?size=100&id=KxHlias9AgZt&format=png&color=000000"
+                alt="imagen" width="35px" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-col bg-dark d-flex justify-content-center text-secondary">
+      <p>© 1996-2025, Nx M, Inc. o sus filiales</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
